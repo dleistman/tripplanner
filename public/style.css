@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
 * {
   box-sizing: border-box;
 }
@@ -8,8 +11,56 @@ body {
   background-color: #C1B5AD;
 }
 
+nav {
+  border-style: solid;
+  border-width: thin;
+  border-color: #33232C;
+  opacity: .9;
+  height:10vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFB3DC;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 40%;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  color: #7F596E;
+}
+
+nav li {
+  color: #33232C;
+  font-size: 2em;
+  font-family: 'Bangers', cursive;
+  list-style: none;
+}
+
+h3 {
+  color: #5D5E5F;
+  font-family: 'Bungee Shade', cursive;
+}
+
+select {
+  width: 90%;
+}
+
+.add-btn {
+  text-align: center;
+  width: 6%;
+  border-radius: 50%;
+}
+
 #map {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
 }
 
@@ -17,4 +68,31 @@ body {
   width: 20px;
   height: 20px;
   background-color: blue;
+}
+
+#attractions {
+  margin: 2.5%;
+  border-radius: 5%;
+  border-style: outset;
+  padding: 0 4% 6% 4%;
+  background-color: #E9ECEF;
+}
+
+#itin {
+  margin: 2.5%;
+  border-radius: 5%;
+  border-style: outset;
+  padding: 0 4% 6% 4%;
+  background-color: #E9ECEF;
+}
+
+#flex-container {
+  display: flex;
+}
+
+#sidebar {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

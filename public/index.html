@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Trip Planner</title>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="./style.css"></link>
-    <script src="./bundle.js" defer></script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Trip Planner</title>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="./style.css"></link>
+  <script src="./bundle.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href='#'>Home</a></li>
+      <li><a href='#'>Contact</a></li>
+      <li><a href='#'>About</a></li>
+    </ul>
+  </nav>
+  <div id='flex-container'>
     <div id="map"></div>
-  </body>
+    <div id='sidebar'>
+      <div id="attractions">
+        <h3>Hotels</h3>
+        <select>
+          <option></option>
+        </select>
+        <button class='add-btn'>+</button>
+        <h3>Restaurants</h3>
+        <select>
+          <option></option>
+        </select>
+        <button class='add-btn'>+</button>
+        <h3>Things To Do</h3>
+        <select>
+          <option></option>
+        </select>
+        <button class='add-btn'>+</button>
+      </div>
+      <div id="itin">
+        <div id="itin-list">
+          <h3>Hotels</h3>
+          <li></li>
+          <h3>Restaurants</h3>
+          <li></li>
+          <h3>Things To Do</h3>
+          <li></li>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
